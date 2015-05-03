@@ -1,0 +1,3 @@
+"do this" to-do app. 
+
+Phase 1, project set-up: setting up MVW* for project; configuring Karma and setting up first test to check for controller (lifted straight off of GitHub Angular project).

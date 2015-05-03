@@ -1,0 +1,1 @@
+var doThisTaskList = angular.module('DoThis', ['ngResource'])
