@@ -6,15 +6,32 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/doThisController.js"></script>
   </head>
 
-  <body>
+    <header>
+      <h1> do these tasks: </h1>
+        <form>
+          <input type="text"
+                 name="add-task"
+                 id="new-todo" placeholder="enter to-do item"
+                 autofocus
+                 ng-model="taskName"
+                 ng-change"addTask()"
+                 ng-keyup="addTask()">
+        </form>
+    </header>
+
+  <body ng-controller="DoThisController">
     <div>
-      <form>
-        <input type="text" placeholder="enter to-do item">
-      </form>
+      <ul class="list-group" id="toDoList" ng-repeat="task in taskList track by $index">
+        <li>
+          <input type="checkbox" name="checkbox" ng-model="task.completed" ng-click="deleteTask()"/>
+          <span class="completed-{{task.completed}}">{{ task.name }}</span>
+<!--           <span>{{ task.name }}</span> -->
+        </li>
+      </ul>
     </div>
   </body>
 </html>

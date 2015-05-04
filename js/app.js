@@ -1,1 +1,1 @@
-var doThisTaskList = angular.module('DoThis', ['ngResource'])
+var doThisTaskList = angular.module('DoThis', [])
