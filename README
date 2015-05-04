@@ -6,7 +6,7 @@ Phase 1, project set-up: setting up MVW* for project; configuring Karma and sett
 
 After studying angular documentation, tutorials, and examples, I could only get the task list to work by using $scope rather than self (var self = this).
 
-I did want to write code based strictly on tests but in the interest of just starting out with Angular and wanting to poke around a bit, I have to say, this project was not very test-driven at all. To the point where I think I even left a "backend flush" method in my specs that I wasn't using/didn't need.
+I did want to write code based strictly on tests but in the interest of just starting out with Angular and wanting to poke around a bit, I have to say, this project was not very test-driven at all.
 
 Although this app does very little (tasks are checked off but never really deleted), I felt as though every step took an hour's worth of research.
 
