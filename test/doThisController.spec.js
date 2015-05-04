@@ -10,7 +10,6 @@ describe('DoThisController', function() {
   }));
 
   xit("initialises with text input box with text 'enter to-do item'", function() {
-    expect(ctrl.listAll).toBeUndefined();
   });
 
   it('can add a to-do item from task list', function() {
